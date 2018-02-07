@@ -1,7 +1,7 @@
 # Style-Transfer
 Style transfer of two images using Tensorflow and Keras
 
-## How works
+## Example
 Input Image:
 
 <img src="https://github.com/0x5eba/Style-Transfer/blob/master/hugo.jpg" width="200" height="200">
