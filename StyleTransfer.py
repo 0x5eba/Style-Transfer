@@ -1,7 +1,7 @@
-from style_model.transfer_style import Stylizer
-from style_model.optimizers.l_bfgs import L_BFGS
-from style_model.util.build_callback import build_callback
-from style_model.util.img_util import load_image
+from src.transfer_style import Stylizer
+from src.optimizers.l_bfgs import L_BFGS
+from src.util.build_callback import build_callback
+from src.util.img_util import load_image
 import glob
 
 
