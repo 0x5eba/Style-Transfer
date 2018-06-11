@@ -119,13 +119,3 @@ def denormalize(image: np.ndarray, inplace: bool=False) -> np.ndarray:
     image = image[:, :, ::-1]
 
     return image
-
-
-# explicitly specify the public API of the module
-__all__ = [
-    'load_image',
-    'image_to_matrix',
-    'matrix_to_image',
-    'normalize',
-    'denormalize'
-]

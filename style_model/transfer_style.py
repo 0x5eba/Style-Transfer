@@ -52,10 +52,6 @@ class Stylizer(object):
                 the average, i.e. divide each by len(style_layer_names).
             total_variation_weight: the amount of total variation de-noising
                 to apply to the synthetic images
-
-        Returns:
-            None
-
         """
         # get the names of the layers from the model to error check
         layer_names = VGG_19(include_top=False).output_tensors.keys()
@@ -341,6 +337,3 @@ class Stylizer(object):
         image = matrix_to_image(image)
 
         return image
-
-
-__all__ = ['Stylizer']

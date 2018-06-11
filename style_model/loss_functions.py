@@ -98,6 +98,3 @@ def total_variation_loss(x, kind='isotropic'):
     else:
         # kind can only be two values, raise an error on unexpected kind value
         raise ValueError("`kind` should be 'anisotropic' or 'isotropic'")
-
-
-__all__ = ['content_loss', 'style_loss', 'total_variation_loss']

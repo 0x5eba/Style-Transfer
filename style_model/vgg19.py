@@ -52,10 +52,6 @@ class VGG_19(Model):
                     pooling method produces cleaner classification results
                 - 'avg': this is the optional value for VGG19. Gatys et
                     al. find that this produces smoother synthetic images.
-
-        Returns:
-            None
-
         """
         # setup the private instance variables for this object
         self._include_top = include_top
@@ -227,7 +223,3 @@ class VGG_19(Model):
             weights_path = '{}/model/notop.h5'.format(dirname(__file__))
         # load the weights into self
         self.load_weights(weights_path)
-
-
-# explicitly export the public API of the module
-__all__ = ['VGG_19']

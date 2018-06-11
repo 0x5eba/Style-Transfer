@@ -1,4 +1,3 @@
-"""An interface to the L-BFGS Algorithm."""
 import numpy as np
 from typing import Callable
 from tqdm import tqdm
@@ -6,18 +5,12 @@ from scipy.optimize import fmin_l_bfgs_b
 
 
 class L_BFGS(object):
-    """L-BFGS Optimization Algorithm."""
-
     def __init__(self, max_evaluations: int=20) -> None:
         """
         Initialize a new L-BFGS Hill climbing optimizer.
 
         Args:
             max_evaluations: how fast to adjust the parameters (dW)
-
-        Returns:
-            None
-
         """
         self.max_evaluations = max_evaluations
         self._loss = None
@@ -100,6 +93,3 @@ class L_BFGS(object):
                 callback(X.reshape(shape), i)
 
         return X
-
-
-__all__ = ['L_BFGS']

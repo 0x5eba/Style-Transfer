@@ -1,7 +1,7 @@
-from neural_stylization.transfer_style import Stylizer
-from neural_stylization.optimizers.l_bfgs import L_BFGS
-from neural_stylization.util.build_callback import build_callback
-from neural_stylization.util.img_util import load_image
+from style_model.transfer_style import Stylizer
+from style_model.optimizers.l_bfgs import L_BFGS
+from style_model.util.build_callback import build_callback
+from style_model.util.img_util import load_image
 import glob
 
 

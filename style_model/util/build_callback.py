@@ -1,6 +1,3 @@
-"""A method for building a rich callback for optimizers."""
-
-
 def build_callback(out_dir: str):
     """
     Build a callback method for the given artwork.
@@ -33,10 +30,6 @@ def build_callback(out_dir: str):
         Args:
             image: the image to de-normalize and display
             i: the iteration of optimization
-
-        Returns:
-            None
-
         """
         # clear the existing output
         display.clear_output(wait=True)
